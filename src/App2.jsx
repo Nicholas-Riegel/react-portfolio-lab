@@ -59,18 +59,6 @@ const App = () => {
     
   ]
 
-  const frontendSkills = mySkills.map((x, i) => {
-    if (x.frontEnd){
-      return <li key={i}>{x.name} - Comfort Level: {x.comfort}/10</li>
-    }
-  })
-  
-  const backendSkills = mySkills.map((x, i) => {
-    if (x.backend){
-      return <li key={i}>{x.name} - Comfort Level: {x.comfort}/10</li>
-    }
-  })
-
   return (
     <>
       <h1>{myInfo.name}</h1>
@@ -78,11 +66,19 @@ const App = () => {
       <h3>Skills:</h3>
       <h4>Frontend:</h4>
       <ul>
-        {frontendSkills}
+        {mySkills.map((x, i) => {
+            if (x.frontEnd){
+                return <li key={i}>{x.name} - Comfort Level: {x.comfort}/10</li>
+            }
+        })}
       </ul>
       <h4>Backend:</h4>
       <ul>
-        {backendSkills}
+        {mySkills.map((x, i) => {
+            if (x.backend){
+                return <li key={i}>{x.name} - Comfort Level: {x.comfort}/10</li>
+            }
+        })}
       </ul>
     </>
   )
