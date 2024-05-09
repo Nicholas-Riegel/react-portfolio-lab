@@ -1,0 +1,36 @@
+main{
+    width: 70%;
+    margin: auto;
+}
+
+.container{
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+#info-container{
+    margin-top: 100px;
+}
+
+#info-container ul {
+    list-style-type: none;
+}
+
+#info-container li {
+    margin-left: 20px;
+}
+
+#project-container > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.description-div, .image-div{
+    width: 49%;
+}
+
+img{
+    width: 100%;
+}
