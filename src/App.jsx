@@ -105,7 +105,7 @@ const App = () => {
               <h3>{x.title}</h3>
               <p>{x.description}</p>
             </div>
-            <a href={x.url} className="image-div">
+            <a href={x.url} className="image-div" target='_blank'>
                 <img src={x.image} alt="project-image" />
             </a>
           </div>
